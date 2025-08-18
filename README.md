@@ -16,4 +16,4 @@
 Желаем удачи!
 
 ## Схема классов
-![Схема классов](source/Class_diagram.pdf)
+![Схема классов](source/Class_diagram.png)
