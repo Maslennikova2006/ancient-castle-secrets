@@ -5,8 +5,8 @@
 #include <initializer_list>
 #include <iostream>
 #include <random>
-#ifndef FILM_LIBRARY_MYTVECTOR_TVECTOR_H_
-#define FILM_LIBRARY_MYTVECTOR_TVECTOR_H_
+#ifndef GAME_MYTVECTOR_TVECTOR_H_
+#define GAME_MYTVECTOR_TVECTOR_H_
 
 #define STEP_OF_CAPACITY 15
 enum State { empty, busy, deleted };
@@ -886,5 +886,5 @@ void shuffle(TVector<T>& data) {
         my_swap(data._states[i], data._states[rand_i]);
     }
 }
-#endif  // FILM_LIBRARY_MYTVECTOR_TVECTOR_H_
+#endif  // GAME_MYTVECTOR_TVECTOR_H_
 
