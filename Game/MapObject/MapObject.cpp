@@ -8,13 +8,13 @@ MapObject::MapObject() {
     _coord_x = 0;
     _coord_y = 0;
     _image = "";
-    _type = game_object;
+    _obj_type = game_object;
 }
 MapObject::MapObject(int x, int y, std::string image, objectType type) {
     _coord_x = x;
     _coord_y = y;
     _image = image;
-    _type = type;
+    _obj_type = type;
 }
 MapObject::MapObject(const MapObject& other) {
     if (&other == NULL)
@@ -22,7 +22,7 @@ MapObject::MapObject(const MapObject& other) {
     _coord_x = other._coord_x;
     _coord_y = other._coord_y;
     _image = other._image;
-    _type = other._type;
+    _obj_type = other._obj_type;
 }
 
 MapObject::~MapObject() {
@@ -41,7 +41,7 @@ void MapObject::set_image(const std::string& image) {
     _image = image;
 }
 void MapObject::set_type(const objectType type) {
-    _type = type;
+    _obj_type = type;
 }
 
 const int MapObject::get_coord_x() noexcept {
@@ -54,7 +54,7 @@ const std::string MapObject::get_image() noexcept {
     return _image;
 }
 const objectType MapObject::get_type() noexcept {
-    return _type;
+    return _obj_type;
 }
 
 void MapObject::move_object(Direction direction) {

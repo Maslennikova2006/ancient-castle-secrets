@@ -13,7 +13,7 @@ class MapObject {
     int _coord_x;
     int _coord_y;
     std::string _image;
-    objectType _type;
+    objectType _obj_type;
 
  public:
     MapObject();
