@@ -20,3 +20,11 @@ GameObject::GameObject(const GameObject& other) : MapObject(other) {
 GameObject::~GameObject() {
 
 }
+
+void GameObject::set_weight(int weight) {
+    _weight = weight;
+}
+
+const int GameObject::get_weight() noexcept {
+    return _weight;
+}

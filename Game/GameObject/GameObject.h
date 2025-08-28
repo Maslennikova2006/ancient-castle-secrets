@@ -15,6 +15,10 @@ public:
     GameObject(const GameObject& other);
 
     ~GameObject();
+
+    void set_weight(int weight);
+
+    const int get_weight() noexcept;
 };
 
 #endif  // GAME_GAMEOBJECT_GAMEOBJECT_H_
