@@ -13,9 +13,16 @@ class Player : MapObject {
 
 public:
     Player();
-    Player(MapObject obj, int _health, Backpack backpack);
+    Player(int x, int y, std::string image, objectType type, int _health, Backpack backpack);
+    Player(const Player& other);
 
     ~Player();
+
+    void set_health(int health);
+    void set_backpack(Backpack backpack);
+
+    const int get_health() noexcept;
+    const Backpack get_backpack() noexcept;
 
     void activate_hint();
     void raise_object();
