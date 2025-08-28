@@ -6,6 +6,7 @@
 #define GAME_MAPOBJECT_MAPOBJECT_H_
 
 enum objectType { room, people, game_object };
+enum Direction { up, down, right, left};
 
 class MapObject {
  protected:
@@ -17,10 +18,21 @@ class MapObject {
  public:
     MapObject();
     MapObject(int x, int y, std::string image, objectType type);
+    MapObject(const MapObject& other);
 
-    ~MapObject();
+    virtual ~MapObject();
 
-    void move_object();
+    void set_coord_x(const int x);
+    void set_coord_y(const int y);
+    void set_image(const std::string& image);
+    void set_type(const objectType type);
+
+    const int get_coord_x() noexcept;
+    const int get_coord_y() noexcept;
+    const std::string get_image() noexcept;
+    const objectType get_type() noexcept;
+
+    void move_object(Direction direction);  // возможно стоит сделать виртуальным
 };
 
 #endif  // GAME_MAPOBJECT_MAPOBJECT_H_
