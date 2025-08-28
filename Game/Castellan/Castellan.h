@@ -15,14 +15,16 @@ class Castellan : MapObject {
 
 public:
     Castellan();
-    Castellan(MapObject obj, TVector<std::string> tasks,
+    Castellan(int x, int y, std::string image, objectType type, TVector<std::string> tasks,
         TVector<std::string> hints, bool isAppearance, int chance_of_appearance);
+    Castellan(const Castellan& other);
 
     ~Castellan();
 
     void reward_for_tasks();
     void give_hint();
-    void provide_choice_of_action();
+    void define_an_action();
+    void calculate_chance();
 };
 
 #endif  // GAME_CASTELLAN_CASTELLAN_H_

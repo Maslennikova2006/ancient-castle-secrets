@@ -5,7 +5,7 @@
 #include "/GitHub/Summer_game/ancient-castle-secrets/Game/Room/Room.h"
 #include "/GitHub/Summer_game/ancient-castle-secrets/Game/MapObject/MapObject.h"
 
-Room::Room() {
+Room::Room() : MapObject() {
     _room_type = test;
     _task = "";
     _answer = "";
@@ -21,7 +21,19 @@ Room::Room(int x, int y, std::string image, objectType obj_type, roomType room_t
     _answer = answer;
     _right_answer = right_answer;
     _hint = hint;
-    _isCompleted = false;
+    _isCompleted = isCompleted;
+}
+Room::Room(const Room& other) : MapObject(other) {
+    _room_type = other._room_type;
+    _task = other._task;
+    _answer = other._answer;
+    _right_answer = other._right_answer;
+    _hint = other._hint;
+    _isCompleted = other._isCompleted;
+}
+
+Room::~Room() {
+
 }
 
 void Room::set_task(const std::string task) {

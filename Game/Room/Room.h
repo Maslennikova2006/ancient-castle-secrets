@@ -21,6 +21,9 @@ public:
     Room(int x, int y, std::string image, objectType obj_type, roomType room_type,
         std::string task, std::string _answer,
         std::string _right_answer, std::string _hint, bool isCompleted);
+    Room(const Room& other);
+
+    ~Room();
 
     void set_task(const std::string task);
     void set_answer(const std::string answer);
