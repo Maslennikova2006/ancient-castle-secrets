@@ -11,7 +11,8 @@ class GameObject : MapObject {
 
 public:
     GameObject();
-    GameObject(MapObject obj, int weight);
+    GameObject(int x, int y, std::string image, objectType type, int weight);
+    GameObject(const GameObject& other);
 
     ~GameObject();
 };
