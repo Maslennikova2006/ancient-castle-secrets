@@ -25,6 +25,6 @@ void GameObject::set_weight(int weight) {
     _weight = weight;
 }
 
-const int GameObject::get_weight() noexcept {
+const int GameObject::get_weight() const noexcept {
     return _weight;
 }

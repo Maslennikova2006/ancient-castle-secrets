@@ -18,7 +18,7 @@ public:
 
     void set_weight(int weight);
 
-    const int get_weight() noexcept;
+    const int get_weight() const noexcept;
 };
 
 #endif  // GAME_GAMEOBJECT_GAMEOBJECT_H_
