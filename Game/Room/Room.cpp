@@ -46,16 +46,16 @@ void Room::set_hint(const std::string hint) {
     _hint = hint;
 }
 
-const std::string Room::get_task() noexcept {
+const std::string Room::get_task() const noexcept {
     return _task;
 }
-const std::string Room::get_answer() noexcept {
+const std::string Room::get_answer() const noexcept {
     return _answer;
 }
-const std::string Room::get_right_answer() noexcept {
+const std::string Room::get_right_answer() const noexcept {
     return _right_answer;
 }
-const std::string Room::get_hint() noexcept {
+const std::string Room::get_hint() const noexcept {
     return _hint;
 }
 

@@ -17,7 +17,7 @@ public:
 
     void set_text(std::string text);
 
-    const std::string get_text() noexcept;
+    const std::string get_text() const noexcept;
 };
 
 #endif  // GAME_HINT_HINT_H_

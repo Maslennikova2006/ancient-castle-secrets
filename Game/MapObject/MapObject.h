@@ -27,10 +27,10 @@ class MapObject {
     void set_image(const std::string& image);
     void set_type(const objectType type);
 
-    const int get_coord_x() noexcept;
-    const int get_coord_y() noexcept;
-    const std::string get_image() noexcept;
-    const objectType get_type() noexcept;
+    const int get_coord_x() const noexcept;
+    const int get_coord_y() const noexcept;
+    const std::string get_image() const noexcept;
+    const objectType get_type() const noexcept;
 
     void move_object(Direction direction);  // возможно стоит сделать виртуальным
 };

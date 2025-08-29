@@ -36,12 +36,12 @@ void Task::set_right_answer(std::string answer) {
     _right_answer = answer;
 }
 
-const std::string Task::get_text() noexcept {
+const std::string Task::get_text() const noexcept {
     return _text;
 }
-const std::string Task::get_answer() noexcept {
+const std::string Task::get_answer() const noexcept {
     return _answer;
 }
-const std::string Task::get_right_answer() noexcept {
+const std::string Task::get_right_answer() const noexcept {
     return _right_answer;
 }

@@ -24,6 +24,6 @@ void Hint::set_text(std::string text) {
     _text = text;
 }
 
-const std::string Hint::get_text() noexcept {
+const std::string Hint::get_text() const noexcept {
     return _text;
 }

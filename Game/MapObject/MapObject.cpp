@@ -44,16 +44,16 @@ void MapObject::set_type(const objectType type) {
     _obj_type = type;
 }
 
-const int MapObject::get_coord_x() noexcept {
+const int MapObject::get_coord_x() const noexcept {
     return _coord_x;
 }
-const int MapObject::get_coord_y() noexcept {
+const int MapObject::get_coord_y() const noexcept {
     return _coord_y;
 }
-const std::string MapObject::get_image() noexcept {
+const std::string MapObject::get_image() const noexcept {
     return _image;
 }
-const objectType MapObject::get_type() noexcept {
+const objectType MapObject::get_type() const noexcept {
     return _obj_type;
 }
 

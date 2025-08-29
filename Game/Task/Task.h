@@ -21,9 +21,9 @@ public:
     void set_answer(std::string answer);
     void set_right_answer(std::string answer);
 
-    const std::string get_text() noexcept;
-    const std::string get_answer() noexcept;
-    const std::string get_right_answer() noexcept;
+    const std::string get_text() const noexcept;
+    const std::string get_answer() const noexcept;
+    const std::string get_right_answer() const noexcept;
 };
 
 #endif  // GAME_TASK_TASK_H_

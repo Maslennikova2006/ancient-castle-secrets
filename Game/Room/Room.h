@@ -29,10 +29,10 @@ public:
     void set_answer(const std::string answer);
     void set_hint(const std::string hint);
 
-    const std::string get_task() noexcept;
-    const std::string get_answer() noexcept;
-    const std::string get_right_answer() noexcept;
-    const std::string get_hint() noexcept;
+    const std::string get_task() const noexcept;
+    const std::string get_answer() const noexcept;
+    const std::string get_right_answer() const noexcept;
+    const std::string get_hint() const noexcept;
 
     bool check_answer();
     //void show_hint();
